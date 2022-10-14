@@ -1,11 +1,15 @@
 "use strict"; //Obligatorio declarar variables y constantes
-let ventana= open("", "ventana", "heigth=200,width=200");
- 
+//usando setInterval
+
+let ventana= open("", "ventana", "height=200,width=200");
+let intervalo;
 
 //crear funciones
 function comenzar() {
+  //pasar el foco a la ventana secundaria
+  ventana.focus();
   //crear temporizador
-  setInterval(color,2000);
+  intervalo=setInterval(color,2000);
   
 }
 function color(){
@@ -16,5 +20,8 @@ function color(){
   }
 }
 function parar() {
-  
+  //parar
+  clearInterval(intervalo);
+  //pasar el foco a la ventana secundaria
+  ventana.focus();
 }
