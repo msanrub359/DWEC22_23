@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap"
+      rel="stylesheet"/>
+     <link rel="stylesheet" href="../../../assets/css/style.css" /> 
+    
+  </head>
+  <body>
+    <div class="contenido min-h-screen bg-slate-300">
+      <h1>DWEC 22-23</h1>
+      <p>UD4.-Interacción con el usuario. Eventos y formularios</p>
+      <h2 class="hashtag">03-03 Formularios III</h2>
+    </div> 
+       <section id="form-register">
+          <form action="" method="post" id="frmFirst" name="formNameFirst" autocomplete="false">
+            <h4>Validación Formulario</h4>
+            <input type="text" class="controls" id="nombre" name="nombre" placeholder="Introduzca el nombre" autofocus>
+            <input type="text" class="controls" id="edad" name="edad"  placeholder="Introduzca la edad">
+            <input type="type" class="controls" name="fecha" id="fecha" placeholder="Introduzca la fecha">
+            <input class="" type="radio" name="genero" id="genMas" value="masculino">
+            <label class="" for="genMas">Masculino</label>
+            <input class="" type="radio" name="genero" id="genFem" value="femenino">
+            <label class="" for="genFem">Femenino</label>
+            <span id="errGenero" class="error"></span>
+            <select class="controls" name="provincia" id="provincia" for="provincia">
+             <option selected value="">Elige...</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Sevilla">Sevilla</option>
+              <option value="Jaén">Jaén</option>
+          </select>
+                  
+            <button class="botonsFormVal" id="enviar">Enviar</button>
+            <button type="reset" class="botons" id="cancelar">Cancelar</button>
+          </form>
+         
+        </section>
+          <div>
+           <script src="./js/index.js"></script>
+            <noscript>El navegador no soporta JavaScript</noscript>
+          </div>
+        </body>
+    
+ 
+</html>
