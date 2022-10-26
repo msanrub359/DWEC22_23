@@ -39,7 +39,7 @@ p {
     width:400px;
     background: #703d02;
     padding:30px;
-    margin:auto;
+    margin:auto; 
     margin-top:50px;
     border-radius:6px;
     font-family: 'calibri';
@@ -60,25 +60,26 @@ p {
     font-family: 'calibri';
     font-size: 18px;
 }
-.botons{
-    width: 100%;
+.botons {
+    
+    display:inline-block;
     background: #1f53c5;
     border:none;
-    padding:10px;
+    padding:10px; 
     color:white;
-    margin:16px 0;
+    margin:16px 0; 
     font-size: 16px;
     box-shadow: 7px 13px 37px #000;
 }
+.radio{
+    padding:10px;  
+    margin:16px 0; 
+}
 .botonsFormVal{
-    width: 50%;
-    background: #1f53c5;
-    border:none;
-    padding:10px;
-    color:white;
-    margin:16px 0;
-    font-size: 16px;
-    box-shadow: 7px 13px 37px #000;
+    width: 49%; 
+    }
+.botonCancelar{
+    background: #cc340e;;
 }
 
 #capaSecundaria{
