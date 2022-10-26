@@ -20,22 +20,27 @@
           <form action="" method="post" id="frmFirst" name="formNameFirst" autocomplete="false">
             <h4>Validación Formulario</h4>
             <input type="text" class="controls" id="nombre" name="nombre" placeholder="Introduzca el nombre" autofocus>
-            <input type="text" class="controls" id="edad" name="edad"  placeholder="Introduzca la edad">
-            <input type="type" class="controls" name="fecha" id="fecha" placeholder="Introduzca la fecha">
-            <input class="" type="radio" name="genero" id="genMas" value="masculino">
-            <label class="" for="genMas">Masculino</label>
-            <input class="" type="radio" name="genero" id="genFem" value="femenino">
-            <label class="" for="genFem">Femenino</label>
-            <span id="errGenero" class="error"></span>
-            <select class="controls" name="provincia" id="provincia" for="provincia">
+            <span class="error" id="errnombre"></span>
+            <input type="number" class="controls" id="edad" name="edad"  placeholder="Introduzca la edad">
+            <span class="error" id="erredad"></span>
+            <input type="date" class="controls" name="fecha" id="fecha" placeholder="Introduzca la fecha">
+            
+            <input class="radio" type="radio" name="tipo" id="profe" value="profes@r">Profes@r
+            
+            <input class="radio" type="radio" name="tipo" id="estudiante" value="estudiante">Estudiante
+            <span class="error" id="erredad"></span>
+                    
+            <select class="controls" name="provincia" id="provincia">
              <option selected value="">Elige...</option>
               <option value="Córdoba">Córdoba</option>
               <option value="Sevilla">Sevilla</option>
               <option value="Jaén">Jaén</option>
           </select>
-                  
-            <button class="botonsFormVal" id="enviar">Enviar</button>
-            <button type="reset" class="botons" id="cancelar">Cancelar</button>
+          <span class="error" id="errprovincia"></span>
+            <div>      
+            <button class="botons botonsFormVal" id="enviar">Enviar</button>
+            <button type="reset" class="botons botonsFormVal botonCancelar" id="cancelar">Cancelar</button>
+          </div>
           </form>
          
         </section>
