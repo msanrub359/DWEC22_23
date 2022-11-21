@@ -1,15 +1,11 @@
 "use strict"
+//acceder por la clase
 const header=document.getElementsByClassName("header");
-
 const hero=document.getElementsByClassName("hero");
-console.log(header);
-console.log(hero);
-
-//Si las clases existen más de una vez
-const contenedores=document.getElementsByClassName("contenedor");
-console.log(contenedores);
-
-//Si una clase no existe
-
+const contenedores=document.getElementsByClassName("contenedor")
 const noExiste=document.getElementsByClassName("noExiste");
+console.log(hero);
+console.log(header[0]);
+console.log(contenedores);
 console.log(noExiste);
+
